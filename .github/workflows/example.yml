@@ -9,4 +9,5 @@ jobs:
           with:
             node-version: '20'
         - run: npm install
+        - run: npx puppeteer browsers install firefox
         - run: node index.js
