@@ -1,5 +1,9 @@
 name: MRE
 on: [push]
+
+env:
+  PUPPETEER_PRODUCT: firefox
+
 jobs:
   firefox-pupeteer:
     runs-on: ubuntu-latest
