@@ -9,5 +9,5 @@ jobs:
           with:
             node-version: '20'
         - run: npm install
-        - run: PUPPETEER_PRODUCT=firefox node --eval 'import("puppeteer/install.mjs").catch(() => import("puppeteer/install.js"))'
+        # - run: PUPPETEER_PRODUCT=firefox node --eval 'import("puppeteer/install.mjs").catch(() => import("puppeteer/install.js"))'
         - run: node index.js
